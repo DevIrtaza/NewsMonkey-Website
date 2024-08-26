@@ -1,0 +1,1122 @@
+
+/* Hero Section Styles */
+.hero-section {
+  /* background-color: aliceblue; Background color */
+  background-color:#f8f9fa;
+  
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout for larger screens */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.hero-content img {
+  width: 550px; /* Width for larger screens */
+  border-radius: 30px;
+  height: 425px; /* Fixed height */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation for scaling and shadow */
+}
+
+.hero-content img:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.hero-section h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Text color */
+  text-align: center;
+  font-size: 32px; /* Font size for larger screens */
+  font-weight: bold; /* Bold text */
+  transition: color 0.3s ease; /* Smooth color transition */
+  padding-top: 40px;
+}
+
+.hero-section h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+.hero-content h2 {
+  width: 598px; /* Width for larger screens */
+  text-align: center;
+  margin: 10px 0 15px 0;
+  color: #333; /* Darker color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.hero-content h2:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.read-more {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 25px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 30px; /* Margin at the bottom */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Add transition effects */
+  text-align: center;
+  display: inline-block; /* Ensure proper spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.read-more:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.read-more:active {
+  background-color: #004494; /* Even darker background on click */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+.key-points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px; /* Padding for key points */
+}
+.key-points p {
+  text-align: center;
+}
+/* Responsive Design Adjustments */
+
+/* For screens 1440px and larger */
+@media (min-width: 1440px) {
+  .hero-content {
+      flex-direction: row; /* Maintain side-by-side layout */
+  }
+
+  .hero-content img {
+      width: 550px; /* Fixed width for larger screens */
+  }
+
+  .hero-section h1 {
+      font-size: 32px; /* Larger font size */
+  }
+
+  .hero-content h2 {
+      width: 600px; /* Fixed width */
+      font-size: 24px; /* Larger font size */
+  }
+
+  .read-more {
+      max-width: 400px; /* Maximum width */
+      padding: 14px; /* Larger padding */
+      font-size: 18px; /* Larger font size */
+  }
+}
+
+/* For screens between 1024px and 1440px */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero-content {
+      flex-direction: row; /* Maintain side-by-side layout */
+  }
+
+  .hero-content img {
+      width: 500px; /* Adjust width */
+  }
+
+  .hero-section h1 {
+      font-size: 33px; /* Adjust font size */
+  }
+
+  .hero-content h2 {
+      width: 90%; /* Responsive width */
+      max-width: 600px; /* Maximum width */
+      font-size: 22px; /* Adjust font size */
+  }
+
+  .read-more {
+      max-width: 350px; /* Maximum width */
+      padding: 12px; /* Adjust padding */
+      font-size: 16px; /* Font size */
+  }
+}
+
+/* For screens between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero-content {
+      flex-direction: row; /* Maintain side-by-side layout */
+  }
+
+  .hero-content img {
+      width: 450px; /* Adjust width */
+  }
+
+  .hero-section h1 {
+      font-size: 24px; /* Adjust font size */
+  }
+
+  .hero-content h2 {
+      width: 90%; /* Responsive width */
+      max-width: 600px; /* Maximum width */
+      font-size: 20px; /* Adjust font size */
+  }
+
+  .read-more {
+      max-width: 350px; /* Maximum width */
+      padding: 12px; /* Adjust padding */
+      font-size: 14px; /* Font size */
+  }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .hero-content {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center-align content */
+  }
+
+  .hero-content img {
+      width: 90%; /* Responsive width */
+      max-width: 500px; /* Maximum width */
+      height: auto; /* Adjust height automatically */
+  }
+
+  .hero-section h1 {
+      font-size: 22px; /* Adjust font size */
+  }
+
+  .hero-content h2 {
+      width: 90%; /* Make heading width responsive */
+      font-size: 18px; /* Adjust font size */
+  }
+
+  .read-more {
+      width: 100%; /* Full width button */
+      max-width: 300px; /* Maximum width */
+      padding: 10px; /* Adjust padding */
+      font-size: 12px; /* Font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+      font-size: 20px; /* Further adjust font size */
+  }
+
+  .hero-content h2 {
+      font-size: 16px; /* Further adjust font size */
+  }
+
+  .read-more {
+      width: 100%; /* Full width button */
+      max-width: 250px; /* Maximum width */
+      padding: 10px; /* Adjust padding */
+      font-size: 12px; /* Font size */
+  }
+}
+
+
+
+/* // Top stories  */
+
+.news-cards{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.card{
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 330px; /* Fixed width for each card */
+    display: flex;
+    flex-direction: column; /* Arranges content inside the card in a column */
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.Top-stories-heading {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+
+
+.Top-stories-heading:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+.card img{
+    width: 100%; /* Makes the image take the full width of the card */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    height: 175px;
+    cursor: pointer;
+}
+.card h5{
+    padding: 10px;
+}
+
+.card p{
+    padding: 0px 0px 0px 10px;
+}
+
+.read-More{
+
+   
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    padding: 12px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+  }
+
+  .read-More:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.read-More:active {
+    background-color: #004494; /* Even darker background on click */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+/* navbar search button */
+
+.Searchbtn{
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    /* padding: 12px 20px; Button padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 15px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    padding: 8px 20px 8px 20px;
+    border: none;
+
+}
+
+.Searchbtn:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.Searchbtn:active {
+    background-color: #004494; /* Even darker background on click */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+/* World  */
+
+.World-Card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.world-innercard{
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 330px; /* Fixed width for each card */
+    display: flex;
+    flex-direction: column; /* Arranges content inside the card in a column */
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.world-innercard img {
+    width: 100%; /* Makes the image take the full width of the card */
+   
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    height: 175px;
+    cursor: pointer;
+  }
+  
+  /* Style for the card title */
+  .world-innercard h5 {
+    font-size: 1.25em;
+    margin: 15px;
+    color: #343a40;
+  }
+  
+  /* Style for the card description */
+  .world-innercard p {
+    margin: 0 15px;
+    color: #6c757d;
+  }
+  
+  /* Style for the author and date section */
+  .world-innercard h6 {
+    margin: 15px;
+    font-size: 1em;
+    color: #495057;
+  }
+  
+  .world-innercard h6 span {
+    color: #007bff; /* Blue color for emphasis */
+  }
+
+  .World-News-link{
+
+   
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    padding: 12px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+  }
+
+  .World-News-link:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.World-News-link:active {
+    background-color: #004494; /* Even darker background on click */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+.World-container h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+
+
+.World-container h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+
+.World-container{
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Politics  */
+
+.Politics-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Politics-card{
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 330px; /* Fixed width for each card */
+    display: flex;
+    flex-direction: column; /* Arranges content inside the card in a column */
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Politics-card img {
+    width: 100%; /* Makes the image take the full width of the card */
+   
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    height: 175px;
+    cursor: pointer;
+  }
+  
+  /* Style for the card title */
+  .Politics-card h5 {
+    font-size: 1.25em;
+    margin: 15px;
+    color: #343a40;
+  }
+  
+  /* Style for the card description */
+  .Politics-card p {
+    margin: 0 15px;
+    color: #6c757d;
+  }
+  
+  /* Style for the author and date section */
+  .Politics-card h6 {
+    margin: 15px;
+    font-size: 1em;
+    color: #495057;
+  }
+  
+  .Politics-card h6 span {
+    color: #007bff; /* Blue color for emphasis */
+  }
+
+  .Politics-News-link{
+
+   
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    padding: 12px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+  }
+
+  .Politics-News-link:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.Politics-News-link:active {
+    background-color: #004494; /* Even darker background on click */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+
+
+.Politics h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+
+
+.Politics h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+.Politics{
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Tech */
+
+.Tech-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Tech-card{
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 330px; /* Fixed width for each card */
+    display: flex;
+    flex-direction: column; /* Arranges content inside the card in a column */
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Tech-card img {
+    width: 100%; /* Makes the image take the full width of the card */
+   
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    height: 175px;
+    cursor: pointer;
+  }
+  
+  /* Style for the card title */
+  .Tech-card h5 {
+    font-size: 1.25em;
+    margin: 15px;
+    color: #343a40;
+  }
+  
+  /* Style for the card description */
+  .Tech-card p {
+    margin: 0 15px;
+    color: #6c757d;
+  }
+  
+  /* Style for the author and date section */
+  .Tech-card h6 {
+    margin: 15px;
+    font-size: 1em;
+    color: #495057;
+  }
+  
+  .Tech-card h6 span {
+    color: #007bff; /* Blue color for emphasis */
+  }
+
+  .Tech-News-link{
+
+   
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    padding: 12px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+  }
+
+  .Tech-News-link:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.Tech-News-link:active {
+    background-color: #004494; /* Even darker background on click */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+
+.Tech h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+.Tech h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+.Tech{
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Lifestyle */
+
+.Lifestyle-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Lifestyle-card{
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px; /* Fixed width for each card */
+  display: flex;
+  flex-direction: column; /* Arranges content inside the card in a column */
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.Lifestyle-card img {
+  width: 100%; /* Makes the image take the full width of the card */
+ 
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  height: 175px;
+  cursor: pointer;
+}
+
+/* Style for the card title */
+.Lifestyle-card h5 {
+  font-size: 1.25em;
+  margin: 15px;
+  color: #343a40;
+}
+
+/* Style for the card description */
+.Lifestyle-card p {
+  margin: 0 15px;
+  color: #6c757d;
+}
+
+/* Style for the author and date section */
+.Lifestyle-card h6 {
+  margin: 15px;
+  font-size: 1em;
+  color: #495057;
+}
+
+.Lifestyle-card h6 span {
+  color: #007bff; /* Blue color for emphasis */
+}
+
+.Lifestyle-News-link{
+
+ 
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  padding: 12px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.Lifestyle-News-link:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.Lifestyle-News-link:active {
+  background-color: #004494; /* Even darker background on click */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+
+.Lifestyle h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+
+
+.Lifestyle h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+
+.Lifestyle{
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* sports */
+
+.Sports-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Sports-card{
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px; /* Fixed width for each card */
+  display: flex;
+  flex-direction: column; /* Arranges content inside the card in a column */
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.Sports-card img {
+  width: 100%; /* Makes the image take the full width of the card */
+ 
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  height: 175px;
+  cursor: pointer;
+}
+
+/* Style for the card title */
+.Sports-card h5 {
+  font-size: 1.25em;
+  margin: 15px;
+  color: #343a40;
+}
+
+/* Style for the card description */
+.Sports-card p {
+  margin: 0 15px;
+  color: #6c757d;
+}
+
+/* Style for the author and date section */
+.Sports-card h6 {
+  margin: 15px;
+  font-size: 1em;
+  color: #495057;
+}
+
+.Sports-card h6 span {
+  color: #007bff; /* Blue color for emphasis */
+}
+
+.Sports-News-link{
+
+ 
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  padding: 12px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.Sports-News-link:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.Sports-News-link:active {
+  background-color: #004494; /* Even darker background on click */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+
+.Sports h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+
+
+.Sports h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+.Sports{
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Entertainemnt  */
+
+
+
+
+.Entertainment-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Entertainment-card{
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px; /* Fixed width for each card */
+  display: flex;
+  flex-direction: column; /* Arranges content inside the card in a column */
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.Entertainment-card img {
+  width: 100%; /* Makes the image take the full width of the card */
+ 
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  height: 175px;
+  cursor: pointer;
+}
+
+/* Style for the card title */
+.Entertainment-card h5 {
+  font-size: 1.25em;
+  margin: 15px;
+  color: #343a40;
+}
+
+/* Style for the card description */
+.Entertainment-card p {
+  margin: 0 15px;
+  color: #6c757d;
+}
+
+/* Style for the author and date section */
+.Entertainment-card h6 {
+  margin: 15px;
+  font-size: 1em;
+  color: #495057;
+}
+
+.Entertainment-card h6 span {
+  color: #007bff; /* Blue color for emphasis */
+}
+
+.Entertainment-News-link{
+
+ 
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  padding: 12px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.Entertainment-News-link:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+.Entertainment-News-link:active {
+  background-color: #004494; /* Even darker background on click */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+
+.Entertainment h1 {
+  padding-top: 20px; /* Padding for h1 */
+  margin-bottom: 20px; /* Margin for h1 */
+  color: #007bff; /* Updated color for prominence */
+  text-align: center;
+  font-size: 36px; /* Slightly larger font size */
+  font-weight: 700; /* Semi-bold text for emphasis */
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern, clean font */
+  letter-spacing: 1px; /* Slightly increased letter spacing for readability */
+  text-transform: capitalize; /* Capitalize first letter of each word */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transitions for color and shadow */
+}
+
+
+
+.Entertainment h1:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+
+.Entertainment{
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+
+/* footer */
+/* Footer.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: #000; /* Black background */
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-top: 15px;
+  text-align: center; /* Center-align text */
+}
+
+.footer-section h4 {
+  margin-top: 0;
+  color: #007bff; /* Updated color for headings to match button */
+  font-size: 18px;
+  border-bottom: 2px solid #007bff; /* Accent color underline */
+  padding-bottom: 10px;
+  position: relative;
+  display: inline-block; /* Inline-block to center underlined text */
+}
+
+.footer-section h4::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff; /* Accent color */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.footer-section h4:hover::after {
+  width: 100%; /* Full width underline on hover */
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #fff; /* White text for quick links */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff; /* Blue color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+  padding-left: 10px; /* Simple animation */
+}
+
+.footer-section .social-media {
+  display: flex;
+  justify-content: center; /* Center-align social media icons */
+}
+
+.footer-section .social-media a {
+  margin: 0 15px;
+  color: #a3c4e0; /* Light blue for icons */
+  text-decoration: none;
+  font-size: 28px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section .social-media a:hover {
+  color: #007bff; /* Hover color for icons */
+  transform: scale(1.1); /* Simple zoom animation */
+}
+
+.contact-detail {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.contact-detail a {
+  color: #fff; /* White text for contact details */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 90%; /* Increased width */
+  max-width: 500px; /* Set a maximum width */
+  margin-bottom: 10px;
+  background-color: #222; /* Dark gray */
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+  background-color: #333; /* Slightly lighter on focus */
+  outline: none;
+}
+
+.newsletter-form input[type="submit"] {
+  padding: 12px 20px; /* Match the button padding */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, transform 0.2s;
+  width: 90%; /* Increased width */
+  max-width: 500px; /* Set a maximum width */
+}
+
+.newsletter-form input[type="submit"]:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.newsletter-form input[type="submit"]:active {
+  background-color: #004494; /* Even darker background on click */
+  transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 14px;
+}
