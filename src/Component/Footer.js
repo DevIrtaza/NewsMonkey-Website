@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-copy">
-        &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+        &copy; {new Date().getFullYear()} NewsMonkey. All rights reserved.
       </div>
     </footer>
   );
